@@ -18,8 +18,10 @@ class AppServiceProvider extends ServiceProvider
     {
         //
         Schema::defaultStringLength(191);
-        
-
+        //Force to https for production
+        if($this->app->environment('production')) {
+            \URL::forceScheme('https');
+        }
         view()->composer('admin.layout.header', function ($view) {
             $view->with('user', Auth::user());
         });
