@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 route::get('admin/dangnhap','UserController@getDangnhapAdmin');
 route::post('admin/dangnhap','UserController@getpostDangnhapAdmin');
@@ -85,6 +85,7 @@ route::group(['prefix'=>'admin','middleware'=>'AdminMiddleware'],function(){
 
 
 route::get('trangchu','PagesController@TrangChu');
+route::get('/','PagesController@TrangChu');
 route::get('lienhe','PagesController@LienHe');
 route::get('gioithieu','PagesController@GioiThieu');
 route::get('loaitin/{id}/{TenKhongDau}.html','PagesController@LoaiTin');
