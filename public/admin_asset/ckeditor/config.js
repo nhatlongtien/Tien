@@ -7,15 +7,15 @@ CKEDITOR.editorConfig = function( config ) {
 	// Define changes to default configuration here. For example:
 	config.language = 'en';
 	config.uiColor = '#AADC6E';
-	config.filebrowserBrowseUrl = 'http://localhost/laravelDemo/public/admin_asset/ckfinder/ckfinder.html';
+	config.filebrowserBrowseUrl = '/admin_asset/ckfinder/ckfinder.html';
 
-        config.filebrowserImageBrowseUrl = 'http://localhost/laravelDemo/public/admin_asset/ckfinder/ckfinder.html?type=Images';
+        config.filebrowserImageBrowseUrl = '/admin_asset/ckfinder/ckfinder.html?type=Images';
 
-        config.filebrowserFlashBrowseUrl = 'http://localhost/laravelDemo/public/admin_asset/ckfinder/ckfinder.html?type=Flash';
+        config.filebrowserFlashBrowseUrl = '/admin_asset/ckfinder/ckfinder.html?type=Flash';
 
-        config.filebrowserUploadUrl = 'http://localhost/laravelDemo/public/admin_asset/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files';
+        config.filebrowserUploadUrl = '/admin_asset/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files';
 
-        config.filebrowserImageUploadUrl = 'http://localhost/laravelDemo/public/admin_asset/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images';
+        config.filebrowserImageUploadUrl = '/admin_asset/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images';
 
-        config.filebrowserFlashUploadUrl = 'http://localhost/laravelDemo/public/admin_asset/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash';
+        config.filebrowserFlashUploadUrl = '/admin_asset/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash';
 };
