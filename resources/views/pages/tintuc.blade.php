@@ -91,7 +91,7 @@
                             <div class="col-md-7">
                                 <a href="tintuc/{{$lq->id}}/{{$lq->TieuDeKhongDau}}.html"><b>{{$lq->TieuDe}}</b></a>
                             </div>
-                            <p>{{$lq->TomTat}}</p>
+                            <p style="text-align: justify;">{!!$lq->TomTat!!}</p>
                             <div class="break"></div>
                         </div>
                         <!-- end item -->
@@ -115,7 +115,7 @@
                             <div class="col-md-7">
                                 <a href="tintuc/{{$nb->id}}/{{$nb->TieuDeKhongDau}}.html"><b>{{$nb->TieuDe}}</b></a>
                             </div>
-                            <p>{{$nb->TomTat}}</p>
+                            <p style="text-align: justify;">{!!$nb->TomTat!!}</p>
                             <div class="break"></div>
                         </div>
                         @endforeach

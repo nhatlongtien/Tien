@@ -38,14 +38,14 @@
 		                	?>
 		                	<div class="col-md-8 border-right">
 		                		<div class="col-md-5">
-			                        <a href="detail.html">
+			                        <a href="tintuc/{{$tin1->id}}/{{$tin1->TieuDeKhongDau}}.html">
 			                            <img style="width: 320px;height: 160px" class="img-responsive" src="upload/tintuc/{{$tin1['Hinh']}}" alt="">
 			                        </a>
 			                    </div>
 
 			                    <div class="col-md-7">
 			                        <h3>{{$tin1->TieuDe}}</h3>
-			                        <p>{{$tin1->TomTat}}</p>
+			                        <a {!!$tin1->TomTat!!} </a>
 			                        <a class="btn btn-primary" href="tintuc/{{$tin1->id}}/{{$tin1->TieuDeKhongDau}}.html">Xem thêm <span class="glyphicon glyphicon-chevron-right"></span></a>
 								</div>
 

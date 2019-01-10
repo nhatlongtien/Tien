@@ -104,6 +104,7 @@ class TintucController extends Controller
             $name=$file->getClientOriginalName();
             $Hinh=str_random(4)."_".$name;
             $file->move("upload/tintuc",$Hinh);
+            $tintuc->Hinh=$Hinh;
         }else{
             $tintuc->Hinh="";
         }
